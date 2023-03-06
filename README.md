@@ -4,3 +4,5 @@ Comienzo del proyecto Particulas</h1>
 <br><strong>Aquí esta el enlace para la ejecución del programa: https://arielbetancud22.github.io/Particulas/ </strong></br>
 <br><strong>
 Aquí esta el enlace a la wiki de JavaScript: https://github.com/ArielBetancud22/Particulas.wiki.git</br></strong>
+<br><strong>
+Ahora por último aquí esta la wiki del código HTML: https://github.com/ArielBetancud22/Particulas/wiki/Wiki-JavaScript </strong></br>
