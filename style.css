@@ -1,4 +1,9 @@
-body{
+html {
+    overflow: hidden
+}
+
+body {
     background-color: #111116;
-  }
-  
+    margin: 0;
+    padding: 0
+}
