@@ -119,8 +119,7 @@ document.addEventListener(tap, e => {
     render.play();
     updateCoords(e);
     animateParticules(pointerX, pointerY);
-    console.log(pointerX, pointerY, e)
 });
   
 setCanvasSize();
-window.addEventListener('resize', setCanvasSize, false);  
+window.addEventListener('resize', setCanvasSize);  
