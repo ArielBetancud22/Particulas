@@ -17,7 +17,7 @@ function setCanvasSize() {
 }
 
 function updateCoords(e) {
-    pointerX = e.clientX || e.touches[0].clientX / 2;
+    pointerX = e.clientX || e.touches[0].clientX;
     pointerY = e.clientY || e.touches[0].clientY;
 }
   
