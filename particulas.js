@@ -1,6 +1,6 @@
 window.human = false;
 
-var canvasEl = document.querySelector('.fireworks');
+var canvasEl = document.getElementById('fireworks');
 var ctx = canvasEl.getContext('2d');
 var numberOfParticules = 30;
 var pointerX = 0;
