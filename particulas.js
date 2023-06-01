@@ -1,12 +1,12 @@
 "use strict";
 
-var canvasEl = document.getElementById('fireworks');
-var ctx = canvasEl.getContext('2d');
-var numberOfParticules = 30;
-var pointerX = 0;
-var pointerY = 0;
-var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
+const canvasEl = document.getElementById('fireworks');
+const ctx = canvasEl.getContext('2d');
+const numberOfParticules = 30;
+let pointerX = 0;
+let pointerY = 0;
+let tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
+const colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
 
 function setCanvasSize() {
     canvasEl.width = window.innerWidth * 2;
@@ -22,9 +22,9 @@ function updateCoords(e) {
 }
   
 function setParticuleDirection(p) {
-    let angle = anime.random(0, 360) * Math.PI / 180;
-    let value = anime.random(50, 180);
-    let radius = [-1, 1][anime.random(0, 1)] * value;
+    const angle = anime.random(0, 360) * Math.PI / 180;
+    const value = anime.random(50, 180);
+    const radius = [-1, 1][anime.random(0, 1)] * value;
 
     return {
       x: p.x + radius * Math.cos(angle),
@@ -107,7 +107,7 @@ function animateParticules(x, y) {
     }, 0);
 }
   
-var render = anime({
+let render = anime({
     duration: Infinity,
 
     update: function () {
